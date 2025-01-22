@@ -33,9 +33,10 @@
 /* BASE - Base tyles, Variables, Mixins, etc. */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
-  background-color: #ffffff;
+  background-color: #e6f3ff;
   font-family: "Roboto", sans-serif;
   color: #333333;
   font-size: 16px;
@@ -493,6 +494,9 @@ img {
   line-height: 30px;
   list-style: circle;
 }
+#mu-about-us .mu-about-us-area .mu-about-us-left p {
+  font-size: 18px;
+}
 #mu-about-us .mu-about-us-area .mu-about-us-right {
   /*display: inline;
   float: left;
@@ -548,7 +552,7 @@ img {
 #about-video-popup iframe {
   background: url(../img/loader.gif) center center no-repeat;
   margin: 10% auto;
-  width: 650px;
+  width: 100%;
   height: 450px;
 }
 
@@ -562,6 +566,7 @@ img {
   color: #000;
   margin-bottom: 10px;
   text-transform: uppercase;
+  font-size: 40px;
 }
 .mu-title p {
   color: #555;
@@ -654,6 +659,71 @@ img {
   border: none;
 }
 
+
+/*==================
+ PARTNERSHIP SECTION
+====================*/
+#mu-partner-us {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 100px 0;
+    background: #E6F3FF;
+}
+#mu-partner-us .mu-about-us-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+#mu-partner-us .mu-about-us-area .mu-about-us-left {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+#mu-partner-us .mu-about-us-area .mu-about-us-left h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#mu-partner-us .mu-about-us-area .mu-about-us-left p {
+    font-size: 18px;
+}
+#mu-partner-us .mu-about-us-area .mu-about-us-right {
+    margin-top: 65px;
+    margin-left: 40px;
+}
+#mu-partner-us .mu-about-us-area .mu-about-us-right img {
+    width: 100%;
+}
+
+/*==================
+ PRANAV SECTION
+====================*/
+#mu-pranav {
+    display: inline;
+    float: left;
+    padding: 100px 0;
+    width: 100%;
+    background: #333;
+}
+.mu-pranav-content-area {
+  text-align: center;
+  padding: 0px 100px;
+}
+.mu-pranav-content-area img {
+    width: 15%;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 15px 15px 20px;
+}
+.mu-pranav-content-area p {
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+
 /*==================
  FEATURES SECTION
 ====================*/
@@ -684,7 +754,7 @@ img {
   width: 100%;
 }
 #mu-features .mu-features-area .mu-features-content .mu-single-feature span {
-  font-size: 25px;
+  font-size: 50px;
   padding: 10px 15px;
 }
 #mu-features .mu-features-area .mu-features-content .mu-single-feature h4 {
@@ -721,6 +791,64 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+
+
+/*==================
+ MISSION 2030 SECTION
+====================*/
+#mu-2030 {
+  background-color: #333;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+  color: #fff;
+}
+.mu-2030-area {
+
+}
+.mu-2030-title {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.mu-2030-title h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.mu-2030-title p {
+  color: #fff;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+  padding: 0 120px;
+}
+.mu-2030-content {
+    display: inline;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.mu-2030-feature {
+  text-align: center;
+}
+.mu-2030-feature img {
+  border-radius: 50%;
+}
+.mu-2030-feature p {
+  margin-top: 15px;
+  /*font-size: 18px;*/
+}
+.vision-end-1 {
+  text-align: center;
+  /*margin-top: 30px;*/
+}
+
 
 /*==================
  LATEST COURSES SECTION
@@ -872,6 +1000,9 @@ img {
   float: left;
   margin-top: 50px;
   width: 100%;
+}
+#mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-teach-rw1 {
+  margin-bottom: 50px;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single {
   display: inline;
@@ -1877,6 +2008,7 @@ img {
   float: left;
   padding: 100px 0;
   width: 100%;
+  background: #e6f3ff;
 }
 #mu-contact .mu-contact-area {
   display: inline;
@@ -1957,6 +2089,7 @@ img {
 }
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right iframe {
   height: 500px;
+  width: 100%;
 }
 
 /*==================
@@ -2119,7 +2252,7 @@ img {
   #mu-slider .mu-slider-single .mu-slider-content h2 {
     font-size: 35px;
     line-height: 65px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 
   #mu-slider .mu-slider-single .mu-slider-img {
@@ -2279,7 +2412,119 @@ img {
 
   #mu-slider .mu-slider-single .mu-slider-content h2 {
     font-size: 30px;
-    line-height: 60px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
+  #mu-service .mu-service-area .mu-service-single:nth-child(2) {
+    margin: 15px 0px;
+  }
+  #mu-service .mu-service-area .mu-service-single {
+    min-height: 200px;
+  }
+
+  #mu-about-us .mu-about-us-area .mu-about-us-left h2,
+  #mu-partner-us .mu-about-us-area .mu-about-us-left h2,
+  .mu-title h2, .mu-2030-title h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  #mu-about-us .mu-about-us-area .mu-about-us-left p,
+  #mu-partner-us .mu-about-us-area .mu-about-us-left p,
+  .mu-pranav-content-area p {
+    font-size: 16px;
+    text-align: center;
+  }
+  #mu-about-us .mu-about-us-area .mu-about-us-right,
+  #mu-partner-us .mu-about-us-area .mu-about-us-right {
+    margin-left: 0px;
+  }
+  #mu-about-us .mu-about-us-area .mu-about-us-right img,
+  #mu-partner-us .mu-about-us-area .mu-about-us-right img {
+    margin-top: 10px;
+  }
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
+    width: 50%;
+  }
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span,
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single .plus,
+  #mu-features .mu-features-area .mu-features-content .mu-single-feature span {
+    font-size: 26px;
+  }
+  #mu-abtus-counter {
+    padding: 60px 0px 30px 0px;
+  }
+  #mu-partner-us, #mu-pranav, #mu-2030 {
+    padding: 60px 0px;
+  }
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
+    font-size: 26px;
+  }
+  .mu-pranav-content-area, .mu-2030-title p {
+    padding: 0px;
+  }
+  .mu-pranav-content-area img {
+    width: 35%;
+  }
+  #mu-features .mu-features-area .mu-features-content .mu-single-feature h4 {
+    margin-bottom: 0px;
+  }
+
+  .mu-2030-feature {
+    width: 50%;
+    float: left;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+  }
+  .mu-2030-feature img {
+    width: 70%;
+  }
+  .mu-2030-feature p {
+    font-size: 14px;
+  }
+  #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single {
+    width: 50%;
+    padding: 0px 5px;
+  }
+  #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-ourteacher-single-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-ourteacher-single-content span {
+    margin-bottom: 5px;
+  }
+  #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-teach-rw1 {
+    margin-bottom: 0px;
+  }
+  #mu-our-teacher {
+    padding: 60px 0 30px 0px;
+  }
+  #mu-admin-board .mu-admin-board-area .mu-admin-board-content .slick-slide {
+    padding: 0px;
+  }
+  .mu-latest-course-single .mu-latest-course-img img {
+    width: 100%;
+  }
+  /*#mu-admin-board .mu-admin-board-area .mu-admin-board-content {
+    margin-top: 20px;
+  }*/
+  .mu-latest-course-single .mu-latest-course-single-content {
+    padding: 10px 5px;
+    text-align: center;
+  }
+  .mu-latest-course-single .mu-latest-course-single-content p {
+    margin-bottom: 0px;
+  }
+  .mu-latest-course-single .mu-latest-course-single-content h4 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .mu-address {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 100%;
   }
 
   #mu-abtus-counter {
@@ -2294,6 +2539,8 @@ img {
 
   #mu-features .mu-features-area .mu-features-content .mu-single-feature {
     text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   #mu-features .mu-features-area .mu-features-content .mu-single-feature h4::after {
@@ -2366,8 +2613,9 @@ img {
   }
 
   #mu-slider .mu-slider-single .mu-slider-content h2 {
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 15px;
   }
 
   #mu-slider .mu-slider-single .mu-slider-img {
@@ -2376,10 +2624,12 @@ img {
 
   #mu-slider .mu-slider-single .mu-slider-content h4 {
     letter-spacing: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   #mu-service {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   #mu-service .mu-service-area .mu-service-single {
@@ -2388,6 +2638,7 @@ img {
 
   #mu-service .mu-service-area .mu-service-single h3 {
     font-size: 16px;
+    font-weight: 600;
   }
 
   #mu-slider .mu-slider-single .mu-slider-img figure img {
@@ -2415,17 +2666,18 @@ img {
   }
 
   #mu-slider .mu-slider-single .mu-slider-content h2 {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 35px;
+    margin-bottom: 15px;
   }
 
   #mu-slider .mu-slider-single .mu-slider-content h4 {
-    font-size: 15px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   #mu-slider .mu-slider-single .mu-slider-content p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -2434,7 +2686,7 @@ img {
   }
 
   #mu-slider .mu-slider-single .mu-slider-content {
-    top: 5%;
+    top: 25%;
   }
 
   #mu-slider .slick-prev, #mu-slider .slick-next {
@@ -2443,7 +2695,7 @@ img {
   }
 
   #mu-slider .mu-slider-single .mu-slider-img {
-    height: 270px;
+    height: 500px;
   }
 
   #mu-service .mu-service-area .mu-service-single {
@@ -2516,6 +2768,7 @@ img {
 
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right iframe {
     height: 350px;
+    width: 100%;
   }
 }
 @media (max-width: 360px) {
@@ -2554,6 +2807,7 @@ img {
 
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right iframe {
     height: 300px;
+    width: 100%;
   }
 
   #mu-error .mu-error-area p {
